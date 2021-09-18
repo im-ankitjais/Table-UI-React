@@ -1,0 +1,141 @@
+.table_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 7px 15px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    width: auto;
+}
+.transition{
+    transition: all 0.5s;
+}
+.transition:hover{
+    transform: scale(1.01);
+}
+.crypto-info {
+	display: flex;
+	align-items: center;
+}
+.crypto-info__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crypto-info__img img {
+	margin-right: 15px;
+	height: 30px;
+	width: 30px;
+	border-radius: 45px;
+	border: 3px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.crypto-info__basic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.crypto-info__basic > h5{
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.crypto-info__basic > p{
+    margin: 0;
+    padding: 0;
+    color: #6c757d;
+}
+.up{
+    color: #28a745;
+}
+.down{
+    color: #dc3545;
+}
+.success-circle {
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	margin-right: 10px;
+	display: inline-block;
+    background-color: #28a745;
+}
+.danger-circle {
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	margin-right: 10px;
+	display: inline-block;
+    background-color: #dc3545;
+}
+.action-menu{
+    position: relative;
+}
+.action-menu > img{
+    cursor: pointer;
+}
+.dropdown-content {
+    z-index: 1000 !important;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate(-90px, 39px);
+    min-width: 9rem;
+    padding: .5rem 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+.dropdown-content > li {
+    list-style: none;
+    display: list-item;
+    z-index: 1000 !important;
+}
+.dropdown-item{
+    display: flex;
+    z-index: 1000 !important;
+    padding: .25rem 1rem;
+    clear: both;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .table_row{
+        justify-content: flex-start;
+        width: min-content;
+    }  
+}
+@media(max-width: 992px){
+
+}

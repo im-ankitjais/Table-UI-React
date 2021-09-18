@@ -1,0 +1,38 @@
+.error_container{
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+    border-radius: 7px;
+    background-color: tomato;
+    color: #fff;
+}
+.error_container.showError {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+  }
